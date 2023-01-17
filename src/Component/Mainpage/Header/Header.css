@@ -1,0 +1,10 @@
+.logo{
+    /* display: flex;
+    height:100px;
+    background-color: rgb(14, 26, 93); */
+    color: white;
+}
+img{
+    max-width: 8% !important;
+    border-radius: 4% !important;
+}

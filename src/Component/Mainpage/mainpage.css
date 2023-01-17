@@ -1,0 +1,25 @@
+.nav-component{
+    display:flex;
+}
+.sidebar{
+    width: 150px;
+    height:100vh;
+    background-color:antiquewhite;
+}
+.side-link{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+
+}
+.header{
+    padding-inline: 10px;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    background-color: rgb(68, 65, 171);
+    justify-content: space-between;
+
+}

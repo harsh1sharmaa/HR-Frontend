@@ -1,0 +1,30 @@
+.bar-outlayer{
+    height:20px;
+    border: 2px solid black;
+    
+}
+.login{
+    margin: auto;
+    width:50%
+}
+.progressbar{
+    height: 18px;
+    background-color:blue;
+}
+.f-input{
+
+    width: 500px;
+    padding:5px;
+}
+.input{
+   
+
+    /* width: 100%; */
+    width: 500px;
+    padding:10px 10px 10px 10px;
+}
+.btn{
+    width:100px;
+    height:50px;
+margin-left: 5px;
+}
