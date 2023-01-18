@@ -6,7 +6,7 @@ import Register from "./Component/Register/Register";
 import Dashboard from "./Component/Dashboard/Dashboard";
 import Mainpage from "./Component/Mainpage/Mainpage";
 import Inputfield from "./Component/Input/Inputfield";
-import Login from "./Component/Login/Login";
+import Login from "./Component/Sample/Login";
 import Container from "./Component/Container";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         {/* <Login/>
         <Mainpage/> */}
         <Container/>
+        {/* <Login/> */}
         {/* <Inputfield type="password" placeholder="Enter your password" /> */}
       </BrowserRouter>
       {/* <Dashboard/> */}

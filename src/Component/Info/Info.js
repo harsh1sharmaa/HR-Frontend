@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "../Button/Button";
-import Logininfo from "./Formpage/Logininfo";
+import Education from "./Formpage/Education";
 import Other from "./Formpage/Other";
 import Personal from "./Formpage/Personal";
 import Progression from "../Progressbar/Progressbar";
@@ -10,21 +10,32 @@ const Info = () => {
   const formTitle = ["login Info", "personal info", "other info"];
   const progress = ["33.3", "66.6", "100"];
   const [currentPage, setCurrentPage] = useState(0);
-  console.log(currentPage);
-  const handleLogin = (e) => {
+  const [info, setInfo] = useState({
+    highschool: "",
+    intermediate: "",
+    btech: "",
+    age: "",
+    shift: "",
+    company: "",
+    gender: "",
+    phone: "",
+    city: "",
+  });
+  console.log(info);
+  const handleSave = (e) => {
     e.preventDefault();
 
-    console.log("hekllo");
+    console.log(info);
   };
   const getPage = () => {
     if (currentPage === 0) {
-      return <Logininfo />;
+      return <Education info={info} setInfo={setInfo} />;
     }
     if (currentPage === 1) {
-      return <Other />;
+      return <Other info={info} setInfo={setInfo} />;
     }
     if (currentPage === 2) {
-      return <Personal />;
+      return <Personal info={info} setInfo={setInfo} />;
     }
   };
 
@@ -32,8 +43,11 @@ const Info = () => {
     <>
       <div className="login">
         {/* <div className="bar-outlayer"> */}
-          <div> <Progression now={progress[currentPage]} /> </div>
-          {/* <div
+        <div>
+          {" "}
+          <Progression now={progress[currentPage]} />{" "}
+        </div>
+        {/* <div
             className="progressbar"
             style={{
               width:
@@ -48,17 +62,22 @@ const Info = () => {
         <div className="form-title">
           <h2>{formTitle[currentPage]}</h2>
         </div>
-        <div className="form-body">
-          {getPage()}
-        </div>
-        <div>
-        </div>
+        <div className="form-body">{getPage()}</div>
+        <div></div>
         <div className="form-fotter">
-          <Button className="btn" text="prev" disabled={currentPage === 0 ? "disabled" : null}
-            onClick={() => setCurrentPage(currentPage - 1)} />
-          <Button className="btn" text="next"   disabled={currentPage === 2 ? "disabled" : null}
-            onClick={() => setCurrentPage(currentPage + 1)} />
-        {/*   <button
+          <Button
+            className="btn"
+            text="prev"
+            disabled={currentPage === 0 ? "disabled" : null}
+            onClick={() => setCurrentPage(currentPage - 1)}
+          />
+          <Button
+            className="btn"
+            text="next"
+            disabled={currentPage === 2 ? "disabled" : null}
+            onClick={() => setCurrentPage(currentPage + 1)}
+          />
+          {/*   <button
             disabled={currentPage === 0 ? "disabled" : null}
             onClick={() => setCurrentPage(currentPage - 1)}
           >
@@ -83,6 +102,7 @@ const Info = () => {
           </div>
           <button type="submit">Login</button>
         </form> */}
+        <button />
       </div>
     </>
   );
