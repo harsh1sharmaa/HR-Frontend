@@ -8,8 +8,8 @@ export const Sidebardata=[
         name:"info",
     },
     {
-        path:"two",
-        name:"two",
+        path:"attendance",
+        name:"attendance",
     },
     {
         path:"the",

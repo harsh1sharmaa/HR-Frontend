@@ -5,7 +5,7 @@ import Login from "./Login/Login";
 import Signup from "./Signup/Signup";
 import Mainpage from "./Mainpage/Mainpage";
 import The from "./Mainpage/Pages/The";
-import Two from "./Mainpage/Pages/Two";
+import Attendance from "./Mainpage/Pages/Attendance";
 import Dashboard from "./Mainpage/Pages/Dashboard";
 
 
@@ -19,7 +19,7 @@ const Container = () => {
           <Route path="dash" element={<Dashboard/>} />
           <Route path="info" element={<Info />} />
           <Route path="the" element={<The />} />
-          <Route path="two" element={<Two />} />
+          <Route path="attendance" element={<Attendance />} />
           <Route path="*" element={<>NO Page Found 2</>} />
  
         </Route>

@@ -1,10 +1,11 @@
 import React from 'react'
+import Userdash from '../../Userdash/Userdash'
 
 const Dashboard = () => {
     return (
-        <div>
-            DashBoard
-        </div>
+       <> 
+       <Userdash/>
+       </>
     )
 }
 export default Dashboard
