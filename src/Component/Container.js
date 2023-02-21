@@ -4,7 +4,7 @@ import Info from "./Info/Info";
 import Login from "./Login/Login";
 import Signup from "./Signup/Signup";
 import Mainpage from "./Mainpage/Mainpage";
-import The from "./Mainpage/Pages/The";
+import Leave from "./Mainpage/Pages/Leave";
 import Attendance from "./Mainpage/Pages/Attendance";
 import Dashboard from "./Mainpage/Pages/Dashboard";
 
@@ -18,7 +18,7 @@ const Container = () => {
         <Route path="/home" element={<Mainpage/>} >
           <Route path="dash" element={<Dashboard/>} />
           <Route path="info" element={<Info />} />
-          <Route path="the" element={<The />} />
+          <Route path="leave" element={<Leave />} />
           <Route path="attendance" element={<Attendance />} />
           <Route path="*" element={<>NO Page Found 2</>} />
  

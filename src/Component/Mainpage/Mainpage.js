@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 import './mainpage.css';
 import Dashboard from "./Pages/Dashboard";
 import Info from "./Pages/Info";
-import The from "./Pages/The";
+import The from "./Pages/Leave";
 import Two from "./Pages/Attendance";
 import Sidebar from "./Sidebar/Sidebar";
 import { Outlet, useOutletContext } from "react-router-dom";

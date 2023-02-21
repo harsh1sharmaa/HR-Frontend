@@ -12,7 +12,7 @@ export const Sidebardata=[
         name:"attendance",
     },
     {
-        path:"the",
-        name:"the",
+        path:"Leave",
+        name:"Leave",
     },
 ]
