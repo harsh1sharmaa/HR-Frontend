@@ -8,6 +8,7 @@ const Sidebar = () => {
   return (
     <div className="side">
       {Sidebardata.map((item, index) => {
+        
         return <Navwrapper to={item.path} text={item.name} />;
       })}
     </div>

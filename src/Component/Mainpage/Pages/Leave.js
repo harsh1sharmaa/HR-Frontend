@@ -7,7 +7,7 @@ const Leave = () => {
     reportingPerson: "",
     start: "",
     end: "",
-    describe: "",
+    reason: "",
   });
 
   const handleSubmit = (e) => {
@@ -73,13 +73,13 @@ const Leave = () => {
             />
           </div>
           <div className="form-control">
-            <label htmlFor="describe">Reporting Name </label>
+            <label htmlFor="reason">Reporting Name </label>
             <br></br>
             <input
               type="text"
-              id="describe"
-              name="describe"
-              value={leaveObj.describe}
+              id="reason"
+              name="reason"
+              value={leaveObj.reason}
               onChange={handleChange}
             />
           </div>

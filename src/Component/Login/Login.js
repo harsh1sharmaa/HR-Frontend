@@ -73,6 +73,7 @@ const Login = () => {
       localStorage.setItem("userToken", "rty54gtyr54rytrt");
       console.log("in if");
       navigation("/home", { state: { status: "login" } });
+      navigation("/home", { state: { status: "login" } });
     setEmail("");
     setPassword("");
     setEmailError("");
